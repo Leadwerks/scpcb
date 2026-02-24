@@ -1,0 +1,1 @@
+This folder is for icons the editor uses to display point entities.

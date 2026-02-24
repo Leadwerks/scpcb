@@ -9,6 +9,8 @@
 		Ryan Stillings ("Risingstar64")
 		Sam Lynch ("InnocentSam")
 		Shaun Gaylard ("ENDSHN")
+		Mark Sibly (Blitz Research Ltd)
+		Josh Klint (Leadwerks Software)
 
 
 *3D Modellers

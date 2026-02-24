@@ -1,4 +1,22 @@
-﻿v1.3.11
+v1.4
+Save files from version 1.3.11 are compatible with this version.
+
+- Added WineD3D for Windows to translate DirectX 7 calls to OpenGL.
+- Fixed problems with intro movie sizing at higher screen resolutions.
+- Fixed bug where closing window when intro movies are playing would cause crash.
+- Intro movie files are now compatible with Linux.
+- Improved default screen resolution selection, to support more displays.
+- Removed "Check for updates" option in launcher.
+- Removed "16-bit" option in launcher.
+- Removed "Borderless Window" option in launcher, since it didn't work correctly with OpenGL renderer, and is no longer needed.
+- Added "Intro movies" option in launcher.
+- Steamworks integration.
+- Steam achievements added.
+- File options.ini is now copied from defaults.ini, if it doesn't exist.
+
+----------------------------------------------------------------------------------
+
+v1.3.11
 Save files from version 1.3.10 are compatible with this version.
 
 - Added a mouse smoothing option.
