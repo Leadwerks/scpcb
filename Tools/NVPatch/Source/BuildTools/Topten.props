@@ -1,0 +1,41 @@
+<Project>
+
+  <Import Project="../version.props" />
+
+  <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateFullPaths>True</GenerateFullPaths>
+    <OutputPath>../Build/$(Configuration)/$(MSBuildProjectName)</OutputPath>
+    <IntermediateOutputPath>../Build/$(Configuration)/$(MSBuildProjectName)/obj</IntermediateOutputPath>
+    <PackageOutputPath>../Build/$(Configuration)</PackageOutputPath>
+    <NoWarn>436</NoWarn>
+    <Authors>Topten Software</Authors>
+    <Company>Topten Software</Company>
+    <TtsCodeSign>False</TtsCodeSign>
+    <TtsInheritDoc>True</TtsInheritDoc>
+    <DocumentationFile>$(OutputPath)/$(AssemblyName).xml</DocumentationFile>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../version.cs" Link="version.cs" />
+  </ItemGroup>
+
+  <Target Name="Code Sign" AfterTargets="Build" Condition="$(TtsCodeSign) And '$(TargetFileName)'!=''">
+    <Exec Command="ttssign $(TargetDir)$(TargetFileName)" />
+  </Target>
+
+  <Target Name="InheritDoc" AfterTargets="PostBuildEvent" Condition="$(GenerateDocumentationFile) And $(TtsInheritDoc)">
+    <Exec Command="inheritdoc -b $(OutputPath) -f $(AssemblyName).xml --overwrite" />
+  </Target>
+
+  <ItemGroup>
+      <None Include="../buildtools/nuget-icon.png" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\**" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Topten.nvpatch/0.1.108": {
+        "runtime": {
+          "Topten.nvpatch.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Topten.nvpatch/0.1.108": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
