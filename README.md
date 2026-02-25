@@ -15,8 +15,6 @@ These instructions will teach you how to install and run everything you need to 
 First, download the contents of the game's source code repository here:
 https://github.com/Leadwerks/scpcb
 
-Our build uses [WineD3D for Windows](https://fdossena.com/?p=wined3d/index.frag).to translate all of the game's DirectX7 calls into OpenGL, which has better driver support. This ensures that the game remains free and open-source for all developers to access.
-
 ### Install Blitz3D
 
 To install Blitz3D, just extract the contents of the zip archive "Tools\Blitz3D.zip" to the location "C:\Program Files (x86)\Blitz3D".
@@ -50,6 +48,8 @@ You should run the 4 GB patch tool to increase the amount of memory the applicat
 ![](4gbpatch.png)
 
 ## NVPatch (Recommended)
+
+Our build uses [WineD3D for Windows](https://fdossena.com/?p=wined3d/index.frag).to translate all of the game's DirectX7 calls into OpenGL, which has better driver support. This ensures that the game remains free and open-source for all developers to access.
 
 NVPatch will patch the executable to add information that tells Windows that the game should be run with a discrete GPU, if one is available. This works for both Nvidia and AMD GPUs.
 
