@@ -26,7 +26,7 @@ To install Blitz3D, just extract the contents of the zip archive "Tools\Blitz3D.
 1. Open the Blitz3D IDE by launching the program Blitz3D.exe.
 2. In the IDE, open the file "SCPCB.bb".
 3. Click the **Program** menu and make sure the **Debug Enabled?** menu item is deselected. This will ensure that you create a release build instead of a slower debug build.
-4. Select the **Program > Create Executable** menu item to compile the game. You must have the file **SCPCB.bb** selected in the tabbed panel when you do this, as the selected file is used to indicate the main file to start compiling with.
+4. Select the **Program > Create Executable** menu item to compile the game. You must have the file SCPCB.bb selected in the tabbed panel when you do this, as the selected file is used to indicate the main file to start compiling with.
 5. After you have followed these steps a message will appear saying that the executable was created successfully.
 
 ![](blitz3d.png)
