@@ -67,8 +67,6 @@ However, Blitz has its own compiler and does not support this feature, so this t
 
 **NVPatch** will patch the executable to add these two variables into any compiled EXE..._and it works with Blitz EXEs!_
 
-If you don't apply the NVPatch tool to your executable, the game will try to use integrated graphics when it runs on a laptop with switchable graphics.
-
 To patch the executable, just run the **NVPatch.bat** file. If the tool works you will see a message that says OK.
 
 ![](nvpatch.png)
