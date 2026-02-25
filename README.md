@@ -15,7 +15,7 @@ These instructions will teach you how to install and run everything you need to 
 First, download the contents of the game's source code repository here:
 https://github.com/Leadwerks/scpcb
 
-Our build uses WineD3D for Windows.to translate all of the game's DirectX7 calls into OpenGL, which has better driver support. This ensures that the game remains free and open-source for all developers to access.
+Our build uses [WineD3D for Windows](https://fdossena.com/?p=wined3d/index.frag).to translate all of the game's DirectX7 calls into OpenGL, which has better driver support. This ensures that the game remains free and open-source for all developers to access.
 
 ### Install Blitz3D
 
