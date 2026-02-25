@@ -56,7 +56,7 @@ To solve this problem, our build uses [WineD3D for Windows](https://fdossena.com
 - wined3d.dll
 
 There is another problem, though. Laptop computers often use "switchable graphics", with an integrated graphics chip built into the CPU for simple 2D drawing, and a discrete GPU for games. The problem is that by default, any OpenGL application will use the integrated graphics chip. In applications written in C/C++ we can declare two special variables that will tell the driver that we want to use the discrete GPU. One variable is for Nvidia and the other is for AMD cards:
-```
+```c++
 extern "C"
 {
 	_declspec(dllexport) DWORD NvOptimusEnablement = 0x00000001;
