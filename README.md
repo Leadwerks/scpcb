@@ -65,7 +65,7 @@ extern "C"
 ```
 However, Blitz has its own compiler and does not support this feature, so this trick will not work with games written in Blitz3D that use OpenGL.
 
-**NVPatch** will patch the executable to add information that tells Windows that the game should be run with a discrete GPU, if one is available. This works for both Nvidia and AMD GPUs.
+**NVPatch** will patch the executable to add information to add these two variables indicating that the game should be run with a discrete GPU, if one is available. Most importanatly, this tool works on EXEs compiled with Blitz.
 
 If you don't apply the NVPatch tool to you executable, the game will try to use integrated graphics when it runs on a laptop with switchable graphics.
 
