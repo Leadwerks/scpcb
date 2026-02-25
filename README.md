@@ -49,7 +49,9 @@ You should run the 4 GB patch tool to increase the amount of memory the applicat
 
 ## NVPatch (Recommended)
 
-Our build uses [WineD3D for Windows](https://fdossena.com/?p=wined3d/index.frag).to translate all of the game's DirectX7 calls into OpenGL, which has better driver support. This ensures that the game remains free and open-source for all developers to access. This solution can be used for all versions of the game, not just ours. To enable WineD3D for Windows just copy these two files into your game directory:
+The Blitz3D renderer is based on DirectX 7, which was released in 1999. Although there is nothing technically wrong with DirectX 7 or the Blitz renderer, the reality is that modern graphics drivers have very poor support for this API. Additionally, there is a hard-coded screen size limitation that prevents the renderer from displaying on high-definition modern screens.
+
+To solve this problem, our build uses [WineD3D for Windows](https://fdossena.com/?p=wined3d/index.frag).to translate all of the game's DirectX7 calls into OpenGL, which has better driver support. This ensures that the game remains free and open-source for all developers to access. This solution can be used for all versions of the game, not just ours. To enable WineD3D for Windows just copy these two files into your game directory:
 - ddraw.dll
 - wined3d.dll
 
