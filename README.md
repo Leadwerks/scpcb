@@ -55,7 +55,15 @@ To solve this problem, our build uses [WineD3D for Windows](https://fdossena.com
 - ddraw.dll
 - wined3d.dll
 
-There is another problem, though. Laptop computers often use "switchable graphics", with an integrated graphics chip built into the CPU for simple 2D drawing, and a discrete GPU for games. The problem is that by default, any OpenGL application will use the integrated graphics chip. There's a way to do this with programs written in C, but Blitz has its own compiler and does not support this feature.
+There is another problem, though. Laptop computers often use "switchable graphics", with an integrated graphics chip built into the CPU for simple 2D drawing, and a discrete GPU for games. The problem is that by default, any OpenGL application will use the integrated graphics chip. In applications written in C/C++ we can declare two special variables that will tell the driver that we want to use the discrete GPU. One variable is for Nvidia and the other is for AMD cards:
+```
+extern "C"
+{
+	_declspec(dllexport) DWORD NvOptimusEnablement = 0x00000001;
+	_declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 1;
+}
+```
+However, Blitz has its own compiler and does not support this feature, so this trick will not work with games written in Blitz3D that use OpenGL.
 
 **NVPatch** will patch the executable to add information that tells Windows that the game should be run with a discrete GPU, if one is available. This works for both Nvidia and AMD GPUs.
 
