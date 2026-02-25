@@ -49,9 +49,13 @@ You should run the 4 GB patch tool to increase the amount of memory the applicat
 
 ## NVPatch (Recommended)
 
-Our build uses [WineD3D for Windows](https://fdossena.com/?p=wined3d/index.frag).to translate all of the game's DirectX7 calls into OpenGL, which has better driver support. This ensures that the game remains free and open-source for all developers to access.
+Our build uses [WineD3D for Windows](https://fdossena.com/?p=wined3d/index.frag).to translate all of the game's DirectX7 calls into OpenGL, which has better driver support. This ensures that the game remains free and open-source for all developers to access. This solution can be used for all versions of the game, not just ours. To enable WineD3D for Windows just copy these two files into your game directory:
+- ddraw.dll
+- wined3d.dll
 
-NVPatch will patch the executable to add information that tells Windows that the game should be run with a discrete GPU, if one is available. This works for both Nvidia and AMD GPUs.
+Laptop computers often use "switchable graphics", with an integrated graphics chip built into the CPU for simple 2D drawing, and a discrete GPU for games. The problem is that by default, any OpenGL application will use the integrated graphics chip. There's a way to do this with programs written in C, but Blitz has its own compiler and does not support this feature.
+
+**NVPatch** will patch the executable to add information that tells Windows that the game should be run with a discrete GPU, if one is available. This works for both Nvidia and AMD GPUs.
 
 If you don't apply the NVPatch tool to you executable, the game will try to use integrated graphics when it runs on a laptop with switchable graphics.
 
