@@ -37,7 +37,7 @@ Before you distribute the executable, there are three steps you should follow to
 
 ## Replace Icon (optional)
 
-If you have Resource Hacker installed you can use it to change the program's icon from the default Blitz3D rocket icon to the SCP icon. If Resource Hacker is installed in the location "C:\Program Files (x86)\Resource Hacker" then you can just run ReplaceIcon.bat, and it should display a message that says "Success!".
+If you have Resource Hacker installed you can use it to change the program's icon from the default Blitz3D rocket icon to the SCP icon. If Resource Hacker is installed in the location "C:\Program Files (x86)\Resource Hacker" then you can just run **ReplaceIcon.bat**, and it should display a message that says "Success!".
 
 ![](reshacker.png)
 
@@ -45,7 +45,7 @@ Resource Hacker also has a visual interface you can use to replace the icon, but
 
 ## 4 GB Patch (Recommended)
 
-You should run the 4 GB patch tool to increase the amount of memory the application can use (it will need it). Run the program Tools\4gb_patch.exe and select SCPCB.exe to patch the executable. This will overwrite the original file. You will see a message indicating the program was successfully patched, but there will be no other visible change:
+You should run the 4 GB patch tool to increase the amount of memory the application can use (it will need it). Run the program **Tools\4gb_patch.exe** and select SCPCB.exe to patch the executable. This will overwrite the original file. You will see a message indicating the program was successfully patched, but there will be no other visible change:
 
 ![](4gbpatch.png)
 
@@ -55,7 +55,7 @@ NVPatch will patch the executable to add information that tells Windows that the
 
 If you don't apply the NVPatch tool to you executable, the game will try to use integrated graphics when it runs on a laptop with switchable graphics.
 
-To patch the executable, just run the NVPatch.bat file. If the tool works you will see a message that says OK.
+To patch the executable, just run the **NVPatch.bat** file. If the tool works you will see a message that says OK.
 
 ![](nvpatch.png)
 
