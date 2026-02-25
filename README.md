@@ -37,7 +37,7 @@ Before you distribute the executable, there are three steps you should follow to
 
 ## Replace Icon (optional)
 
-If you have Resource Hacker installed you can use it to change the program's icon from the default Blitz3D rocket icon to the SCP icon. If Resource Hacker is installed in the location "C:\Program Files (x86)\Resource Hacker" then you can just run **ReplaceIcon.bat**, and it should display a message that says "Success!".
+If you have [Resource Hacker](https://www.angusj.com/resourcehacker/) installed you can use it to change the program's icon from the default Blitz3D rocket icon to the SCP icon. If Resource Hacker is installed in the location "C:\Program Files (x86)\Resource Hacker" then you can just run **ReplaceIcon.bat**, and it should display a message that says "Success!".
 
 ![](reshacker.png)
 
