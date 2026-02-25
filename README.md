@@ -8,9 +8,9 @@ http://creativecommons.org/licenses/by-sa/3.0/
 
 Beware - the source code is perhaps more horrifying than the game itself!
 
-## How to Compile
+## Compiling the Game
 
- These instructions will teach you how to install and run everything you need to compile the game.
+These instructions will teach you how to install and run everything you need to compile the game.
 
 First, download the contents of the game's source code repository here:
 https://github.com/Leadwerks/scpcb
