@@ -6,7 +6,6 @@ This game and the source code are licensed under Creative Commons Attribution-Sh
 
 http://creativecommons.org/licenses/by-sa/3.0/
 
-Requirements:
-•	Blitz3D v1.108
+**Compiling Guide:** https://www.leadwerks.com/community/topic/70572-compiling-guide/
 
 Beware - the source code is perhaps more horrifying than the game itself!
