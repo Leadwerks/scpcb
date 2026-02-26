@@ -13,6 +13,7 @@ Save files from version 1.3.11 are compatible with this version.
 - Steamworks integration.
 - Steam achievements added.
 - File options.ini is now copied from defaults.ini, if it doesn't exist.
+- Added DPI scaling for load screens, inventory system, and HUD.
 
 ----------------------------------------------------------------------------------
 
@@ -1293,3 +1294,4 @@ v0.1.1
 - fixed some typos in the code, not sure if they were causing any actual
 bugs or crashes
 - fixed the bug that made it possible duplicate the SCP-420-J
+
