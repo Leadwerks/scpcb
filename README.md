@@ -74,3 +74,7 @@ To patch the executable, just run the **NVPatch.bat** file. If the tool works yo
 You might see a message that the .NET runtime 8.0.24 runtime is not installed. If this happens, download and install this file from Microsoft: https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=8.0.0&arch=x64&rid=win-x64&os=win10
 
 Once you run these patch tools, in the order specified above, your executable will be ready to deploy.
+
+## Running on Linux
+
+The game will run on Linux through WINE or Valve's Proton with no changes. However, we found the intro video files have to be decompressed to be successfully loaded on Linux. We store the compressed video files here due to size constraints and convenience, but you can decompress the videos yourself or grab the decompressed files from [our build of the game on Steam](https://store.steampowered.com/app/3831680/SCP_Containment_Breach/).
